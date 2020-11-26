@@ -1,0 +1,40 @@
+print("please enter player 'A' Pawns with comma seperated values")
+A=list(map(str,input().split(",")))
+print(A)
+ta=[]
+for i in A:
+    i='A-'+i
+    ta.append(i)
+A=ta
+print(A)
+print("please enter player 'B' Pawns with comma seperated values")
+B=list(map(str,input().split(",")))
+tb=[]
+for i in B:
+    i='B-'+i
+    tb.append(i)
+B=tb
+G=[[' - ','  - ','  - ','  - ' ,'  - '],[' - ','  - ','  - ','  - ' ,'  - '],[' - ','  - ','  - ','  - ' ,'  - '],[' - ','  - ','  - ','  - ' ,'  - '],[' - ','  - ','  - ','  - ' ,'  - ']]
+G[4]=A
+G[0]=B
+for i in range(5): 
+    for j in range(5): 
+        print(G[i][j], end = " ") 
+    print()
+print("Please give input of A pawn")
+p=input()
+pt=p[0]+p[1]
+for i in G :
+    for j in i:
+        if pt==j and G[i.index()][j.index()]==' - ' or '  - ':
+            if p[3]=='F':
+                G[G.index(i)-1][i.index(j)-1]==pt
+                                                                    
+                                                                     
+                                                                     
+            
+             
+for i in range(5): 
+    for j in range(5): 
+        print(G[i][j], end = " ") 
+    print()
